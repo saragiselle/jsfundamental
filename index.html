@@ -7,7 +7,7 @@
 <body>
     <script>
         // Your JavasScript goes here!
-        console.log("Hello, World!")
+        /*console.log("Hello, World!")
         console.log(23+97)
         console.log(1+2+3+4+5+6)
         console.log((4+6+9)/77)
@@ -18,7 +18,45 @@
         console.log(b)
         let max = 57;
         let actual = max - 13;
-        let percentage = actual / max;
+        let percentage = actual / max;*/
+
+        //Testing with Functions!!
+        let add7 = function (number) {
+            return number + 7
+        }
+
+        let multiply = function(number1,number2) {
+            return number1*number2
+        }
+
+        let capitalize = function(string) {
+
+            let text = string;
+            let n = text.length;
+            let firstpart = text.slice(0,1);
+            let upper = firstpart.toUpperCase();
+            let secondpart = text.slice(1,n);
+            let lower = secondpart.toLowerCase();
+            return upper + lower
+        }
+
+        let lastLetter = function(finishLetter) {
+
+            let text = finishLetter;
+            let n = text.length;
+            let last = text.slice(n-1,n)
+            return last
+        
+        }
+
+
+
+        console.log(add7(7))
+        console.log(multiply(34,67))
+        console.log(capitalize("mArIsCoS"))
+        console.log(lastLetter("SAra"))
+
+
     </script>
 </body>
 </html>
